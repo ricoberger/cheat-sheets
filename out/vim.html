@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #fff;
+        color: #000;
+        font-family: Georgia, serif;
+        font-size: 12px;
+        margin: 0;
+      }
+
+      .container {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+        -moz-column-gap: 12px;
+        -webkit-column-gap: 12px;
+        column-gap: 12px;
+        padding: 12px;
+      }
+
+      .item {
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+      }
+
+      h1,
+      .h1 {
+        color: inherit;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        letter-spacing: normal;
+      }
+
+      h1 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      a {
+        color: #1a0dab;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      p {
+        margin: 12px 0;
+        line-height: 20px;
+        letter-spacing: normal;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        border-bottom: 1px dashed #e0e0e0;
+        line-height: 1.55;
+        list-style-type: none;
+        padding: 6px 0;
+      }
+
+      kbd {
+        background-color: #eee;
+        color: #000;
+        border-radius: 0;
+        box-shadow: none;
+        font-family: "Inconsolata", monospace;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 4px;
+      }
+
+      .container {
+        background: #fff;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .well {
+        background: #f8f8f8;
+        border: none;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <div class="item">
+        <h1>Cursor movement</h1>
+        <ul>
+          
+          <li>
+            <kbd>h</kbd> - move cursor left
+          </li>
+          
+          <li>
+            <kbd>j</kbd> - move cursor down
+          </li>
+          
+          <li>
+            <kbd>k</kbd> - move cursor up
+          </li>
+          
+          <li>
+            <kbd>l</kbd> - move cursor right
+          </li>
+          
+          <li>
+            <kbd>gj</kbd> - move cursor down (multi-line text)
+          </li>
+          
+          <li>
+            <kbd>gk</kbd> - move cursor up (multi-line text)
+          </li>
+          
+          <li>
+            <kbd>w</kbd> - jump forwards to the start of a word
+          </li>
+          
+          <li>
+            <kbd>W</kbd> - jump forwards to the start of a word (words can contain punctuation)
+          </li>
+          
+          <li>
+            <kbd>e</kbd> - jump forwards to the end of a word
+          </li>
+          
+          <li>
+            <kbd>E</kbd> - jump forwards to the end of a word (words can contain punctuation)
+          </li>
+          
+          <li>
+            <kbd>b</kbd> - jump backwards to the start of a word
+          </li>
+          
+          <li>
+            <kbd>B</kbd> - jump backwards to the start of a word (words can contain punctuation)
+          </li>
+          
+          <li>
+            <kbd>ge</kbd> - jump backwards to the end of a word
+          </li>
+          
+          <li>
+            <kbd>gE</kbd> - jump backwards to the end of a word (words can contain punctuation)
+          </li>
+          
+          <li>
+            <kbd>%</kbd> - move cursor to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)
+          </li>
+          
+          <li>
+            <kbd>0</kbd> - jump to the start of the line
+          </li>
+          
+          <li>
+            <kbd>_</kbd> - jump to the first non-blank character of the line
+          </li>
+          
+          <li>
+            <kbd>$</kbd> - jump to the end of the line
+          </li>
+          
+          <li>
+            <kbd>g_</kbd> - jump to the last non-blank character of the line
+          </li>
+          
+          <li>
+            <kbd>gg</kbd> - go to the first line of the document
+          </li>
+          
+          <li>
+            <kbd>G</kbd> - go to the last line of the document
+          </li>
+          
+          <li>
+            <kbd>5gg or 5G</kbd> - go to line 5
+          </li>
+          
+          <li>
+            <kbd>gd</kbd> - move to local declaration
+          </li>
+          
+          <li>
+            <kbd>gD</kbd> - move to global declaration
+          </li>
+          
+          <li>
+            <kbd>fx</kbd> - jump to next occurrence of character x
+          </li>
+          
+          <li>
+            <kbd>tx</kbd> - jump to before next occurrence of character x
+          </li>
+          
+          <li>
+            <kbd>Fx</kbd> - jump to the previous occurrence of character x
+          </li>
+          
+          <li>
+            <kbd>Tx</kbd> - jump to after previous occurrence of character x
+          </li>
+          
+          <li>
+            <kbd>;</kbd> - repeat previous f, t, F or T movement
+          </li>
+          
+          <li>
+            <kbd>,</kbd> - repeat previous f, t, F or T movement, backwards
+          </li>
+          
+          <li>
+            <kbd>}</kbd> - jump to next paragraph (or function/block, when editing code)
+          </li>
+          
+          <li>
+            <kbd>{</kbd> - jump to previous paragraph (or function/block, when editing code)
+          </li>
+          
+          <li>
+            <kbd>zz</kbd> - center cursor on screen
+          </li>
+          
+          <li>
+            <kbd>zt</kbd> - position cursor on top of the screen
+          </li>
+          
+          <li>
+            <kbd>zb</kbd> - position cursor on bottom of the screen
+          </li>
+          
+          <li>
+            <kbd>Ctrl &#43; e</kbd> - move screen down one line (without moving cursor)
+          </li>
+          
+          <li>
+            <kbd>Ctrl &#43; y</kbd> - move screen up one line (without moving cursor)
+          </li>
+          
+          <li>
+            <kbd>Ctrl &#43; b</kbd> - move screen up one page (cursor to last line)
+          </li>
+          
+          <li>
+            <kbd>Ctrl &#43; f</kbd> - move screen down one page (cursor to first line)
+          </li>
+          
+          <li>
+            <kbd>Ctrl &#43; u</kbd> - move cursor and screen up 1/2 page
+          </li>
+          
+          <li>
+            <kbd>Ctrl &#43; d</kbd> - move cursor and screen down 1/2 page
+          </li>
+          
+        </ul>
+        
+        <div class="well">
+          <strong>Tip:</strong> Prefix a cursor movement command with a number to repeat it. For example, <kbd>4j</kbd> moves down 4 lines.
+          <p>
+          
+          </p>
+        </div>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Insert mode - inserting/appending text</h1>
+        <ul>
+          
+          <li>
+            <kbd>i</kbd> - insert before the cursor
+          </li>
+          
+          <li>
+            <kbd>I</kbd> - insert at the beginning of the line
+          </li>
+          
+          <li>
+            <kbd>a</kbd> - insert (append) after the cursor
+          </li>
+          
+          <li>
+            <kbd>A</kbd> - insert (append) at the end of the line
+          </li>
+          
+          <li>
+            <kbd>o</kbd> - append (open) a new line below the current line
+          </li>
+          
+          <li>
+            <kbd>O</kbd> - append (open) a new line above the current line
+          </li>
+          
+          <li>
+            <kbd>ea</kbd> - insert (append) at the end of the word
+          </li>
+          
+          <li>
+            <kbd>ctrlPlush</kbd> - delete the character before the cursor during insert mode
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusw</kbd> - delete word before the cursor during insert mode
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusj</kbd> - add a line break at the cursor position during insert mode
+          </li>
+          
+          <li>
+            <kbd>ctrlPlust</kbd> - indent (move right) line one shiftwidth during insert mode
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusd</kbd> - de-indent (move left) line one shiftwidth during insert mode
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusn</kbd> - insert (auto-complete) next match before the cursor during insert mode
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusp</kbd> - insert (auto-complete) previous match before the cursor during insert mode
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusrx</kbd> - insert the contents of register x
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusox</kbd> - Temporarily enter normal mode to issue one normal-mode command x.
+          </li>
+          
+          <li>
+            <kbd>Esc</kbd> - exit insert mode
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Editing</h1>
+        <ul>
+          
+          <li>
+            <kbd>r</kbd> - replace a single character.
+          </li>
+          
+          <li>
+            <kbd>R</kbd> - replace more than one character, until <kbd>ESC</kbd> is pressed.
+          </li>
+          
+          <li>
+            <kbd>J</kbd> - join line below to the current one with one space in between
+          </li>
+          
+          <li>
+            <kbd>gJ</kbd> - join line below to the current one without space in between
+          </li>
+          
+          <li>
+            <kbd>gwip</kbd> - reflow paragraph
+          </li>
+          
+          <li>
+            <kbd>gTilde</kbd> - switch case up to motion
+          </li>
+          
+          <li>
+            <kbd>gu</kbd> - change to lowercase up to motion
+          </li>
+          
+          <li>
+            <kbd>gU</kbd> - change to uppercase up to motion
+          </li>
+          
+          <li>
+            <kbd>cc</kbd> - change (replace) entire line
+          </li>
+          
+          <li>
+            <kbd>cDollar</kbd> - change (replace) to the end of the line
+          </li>
+          
+          <li>
+            <kbd>ciw</kbd> - change (replace) entire word
+          </li>
+          
+          <li>
+            <kbd>cw</kbd> - change (replace) to the end of the word
+          </li>
+          
+          <li>
+            <kbd>s</kbd> - delete character and substitute text
+          </li>
+          
+          <li>
+            <kbd>S</kbd> - delete line and substitute text (same as cc)
+          </li>
+          
+          <li>
+            <kbd>xp</kbd> - transpose two letters (delete and paste)
+          </li>
+          
+          <li>
+            <kbd>u</kbd> - undo
+          </li>
+          
+          <li>
+            <kbd>U</kbd> - restore (undo) last changed line
+          </li>
+          
+          <li>
+            <kbd>CtrlPlusr</kbd> - redo
+          </li>
+          
+          <li>
+            <kbd>dot</kbd> - repeat last command
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Marking text (visual mode)</h1>
+        <ul>
+          
+          <li>
+            <kbd>v</kbd> - start visual mode, mark lines, then do a command (like y-yank)
+          </li>
+          
+          <li>
+            <kbd>V</kbd> - start linewise visual mode
+          </li>
+          
+          <li>
+            <kbd>o</kbd> - move to other end of marked area
+          </li>
+          
+          <li>
+            <kbd>CtrlPlusv</kbd> - start visual block mode
+          </li>
+          
+          <li>
+            <kbd>O</kbd> - move to other corner of block
+          </li>
+          
+          <li>
+            <kbd>aw</kbd> - mark a word
+          </li>
+          
+          <li>
+            <kbd>ab</kbd> - a block with ()
+          </li>
+          
+          <li>
+            <kbd>aB</kbd> - a block with {}
+          </li>
+          
+          <li>
+            <kbd>at</kbd> - a block with <> tags
+          </li>
+          
+          <li>
+            <kbd>ib</kbd> - inner block with ()
+          </li>
+          
+          <li>
+            <kbd>iB</kbd> - inner block with {}
+          </li>
+          
+          <li>
+            <kbd>it</kbd> - inner block with <> tags
+          </li>
+          
+          <li>
+            <kbd>Esc</kbd> - exit visual mode
+          </li>
+          
+        </ul>
+        
+        <div class="well">
+          <strong>Tip:</strong> Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively.
+          <p>
+          
+          </p>
+        </div>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Visual commands</h1>
+        <ul>
+          
+          <li>
+            <kbd>greaterThan</kbd> - shift text right
+          </li>
+          
+          <li>
+            <kbd>lessThan</kbd> - shift text left
+          </li>
+          
+          <li>
+            <kbd>y</kbd> - yank (copy) marked text
+          </li>
+          
+          <li>
+            <kbd>d</kbd> - delete marked text
+          </li>
+          
+          <li>
+            <kbd>tilde</kbd> - switch case
+          </li>
+          
+          <li>
+            <kbd>u</kbd> - change marked text to lowercase
+          </li>
+          
+          <li>
+            <kbd>U</kbd> - change marked text to uppercase
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Registers</h1>
+        <ul>
+          
+          <li>
+            <kbd>show</kbd> - show registers content
+          </li>
+          
+          <li>
+            <kbd>pasteRegisterX</kbd> - paste contents of register x
+          </li>
+          
+          <li>
+            <kbd>yankIntoRegisterX</kbd> - yank into register x
+          </li>
+          
+          <li>
+            <kbd>quotePlusy</kbd> - yank into the system clipboard register
+          </li>
+          
+          <li>
+            <kbd>quotePlusp</kbd> - paste from the system clipboard register
+          </li>
+          
+        </ul>
+        
+        <div class="well">
+          <strong>Tip:</strong> Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.
+          <p>
+          
+          &emsp;<kbd>0</kbd> - last yank<br/>
+          
+          &emsp;<kbd>title</kbd> - Special registers:<br/>
+          
+          &emsp;<kbd>quote</kbd> - unnamed register, last delete or yank<br/>
+          
+          &emsp;<kbd>percent</kbd> - current file name<br/>
+          
+          &emsp;<kbd>hashtag</kbd> - alternate file name<br/>
+          
+          &emsp;<kbd>asterisk</kbd> - clipboard contents (X11 primary)<br/>
+          
+          &emsp;<kbd>plus</kbd> - clipboard contents (X11 clipboard)<br/>
+          
+          &emsp;<kbd>slash</kbd> - last search pattern<br/>
+          
+          &emsp;<kbd>colon</kbd> - last command-line<br/>
+          
+          &emsp;<kbd>dot</kbd> - last inserted text<br/>
+          
+          &emsp;<kbd>minus</kbd> - last small (less than a line) delete<br/>
+          
+          &emsp;<kbd>equal</kbd> - expression register<br/>
+          
+          &emsp;<kbd>underscore</kbd> - black hole register<br/>
+          
+          </p>
+        </div>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Marks and positions</h1>
+        <ul>
+          
+          <li>
+            <kbd>list</kbd> - list of marks
+          </li>
+          
+          <li>
+            <kbd>currentPositionA</kbd> - set current position for mark A
+          </li>
+          
+          <li>
+            <kbd>jumpPositionA</kbd> - jump to position of mark A
+          </li>
+          
+          <li>
+            <kbd>yankToMarkA</kbd> - yank text to position of mark A
+          </li>
+          
+          <li>
+            <kbd>backtick0</kbd> - go to the position where Vim was previously exited
+          </li>
+          
+          <li>
+            <kbd>backtickQuote</kbd> - go to the position when last editing this file
+          </li>
+          
+          <li>
+            <kbd>backtickDot</kbd> - go to the position of the last change in this file
+          </li>
+          
+          <li>
+            <kbd>backtickBacktick</kbd> - go to the position before the last jump
+          </li>
+          
+          <li>
+            <kbd>colonjumps</kbd> - list of jumps
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusi</kbd> - go to newer position in jump list
+          </li>
+          
+          <li>
+            <kbd>ctrlPluso</kbd> - go to older position in jump list
+          </li>
+          
+          <li>
+            <kbd>colonchanges</kbd> - list of changes
+          </li>
+          
+          <li>
+            <kbd>gcomma</kbd> - go to newer position in change list
+          </li>
+          
+          <li>
+            <kbd>gsemicolon</kbd> - go to older position in change list
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusCloseSquare</kbd> - jump to the tag under cursor
+          </li>
+          
+        </ul>
+        
+        <div class="well">
+          <strong>Tip:</strong> To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-blank) of the line holding the mark.
+          <p>
+          
+          </p>
+        </div>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Macros</h1>
+        <ul>
+          
+          <li>
+            <kbd>recordA</kbd> - record macro a
+          </li>
+          
+          <li>
+            <kbd>stopRecording</kbd> - stop recording macro
+          </li>
+          
+          <li>
+            <kbd>runA</kbd> - run macro a
+          </li>
+          
+          <li>
+            <kbd>rerun</kbd> - rerun last run macro
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Global</h1>
+        <ul>
+          
+          <li>
+            <kbd>helpForKeyword</kbd> - open help for keyword
+          </li>
+          
+          <li>
+            <kbd>saveAsFile</kbd> - save file as
+          </li>
+          
+          <li>
+            <kbd>closePane</kbd> - close current pane
+          </li>
+          
+          <li>
+            <kbd>K</kbd> - open man page for word under the cursor
+          </li>
+          
+          <li>
+            <kbd>colonTerminal</kbd> - open a terminal window
+          </li>
+          
+        </ul>
+        
+        <div class="well">
+          <strong>Tip:</strong> Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands.
+          <p>
+          
+          </p>
+        </div>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Cut and paste</h1>
+        <ul>
+          
+          <li>
+            <kbd>yy</kbd> - yank (copy) a line
+          </li>
+          
+          <li>
+            <kbd>twoyy</kbd> - yank (copy) 2 lines
+          </li>
+          
+          <li>
+            <kbd>yw</kbd> - yank (copy) the characters of the word from the cursor position to the start of the next word
+          </li>
+          
+          <li>
+            <kbd>yiw</kbd> - yank (copy) word under the cursor
+          </li>
+          
+          <li>
+            <kbd>yaw</kbd> - yank (copy) word under the cursor and the space after or before it
+          </li>
+          
+          <li>
+            <kbd>yDollar</kbd> - yank (copy) to end of line
+          </li>
+          
+          <li>
+            <kbd>p</kbd> - put (paste) the clipboard after cursor
+          </li>
+          
+          <li>
+            <kbd>P</kbd> - put (paste) before cursor
+          </li>
+          
+          <li>
+            <kbd>gp</kbd> - put (paste) the clipboard after cursor and leave cursor after the new text
+          </li>
+          
+          <li>
+            <kbd>gP</kbd> - put (paste) before cursor and leave cursor after the new text
+          </li>
+          
+          <li>
+            <kbd>dd</kbd> - delete (cut) a line
+          </li>
+          
+          <li>
+            <kbd>twodd</kbd> - delete (cut) 2 lines
+          </li>
+          
+          <li>
+            <kbd>dw</kbd> - delete (cut) the characters of the word from the cursor position to the start of the next word
+          </li>
+          
+          <li>
+            <kbd>diw</kbd> - delete (cut) word under the cursor
+          </li>
+          
+          <li>
+            <kbd>daw</kbd> - delete (cut) word under the cursor and the space after or before it
+          </li>
+          
+          <li>
+            <kbd>dDollar</kbd> - delete (cut) to the end of the line
+          </li>
+          
+          <li>
+            <kbd>x</kbd> - delete (cut) character
+          </li>
+          
+          <li>
+            <kbd>threeToFiveD</kbd> - delete lines starting from 3 to 5
+          </li>
+          
+          <li>
+            <kbd>gPatternD</kbd> - delete all lines containing pattern
+          </li>
+          
+          <li>
+            <kbd>gNotPatternD</kbd> - delete all lines not containing pattern
+          </li>
+          
+        </ul>
+        
+        <div class="well">
+          <strong>Tip:</strong> You can also use the following characters to specify the range:
+          <p>
+          
+          &emsp;<kbd>dotCommaDollarD</kbd> - From the current line to the end of the file<br/>
+          
+          &emsp;<kbd>dotCommaOneD</kbd> - From the current line to the beginning of the file<br/>
+          
+          &emsp;<kbd>tenCommaDollarD</kbd> - From the 10th line to the beginning of the file<br/>
+          
+          </p>
+        </div>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Indent text</h1>
+        <ul>
+          
+          <li>
+            <kbd>greaterThanGreaterThan</kbd> - indent (move right) line one shiftwidth
+          </li>
+          
+          <li>
+            <kbd>lessThanLessThan</kbd> - de-indent (move left) line one shiftwidth
+          </li>
+          
+          <li>
+            <kbd>greaterThanPercent</kbd> - indent a block with () or {} (cursor on brace)
+          </li>
+          
+          <li>
+            <kbd>greaterThanib</kbd> - indent inner block with ()
+          </li>
+          
+          <li>
+            <kbd>greaterThanat</kbd> - indent a block with <> tags
+          </li>
+          
+          <li>
+            <kbd>3==</kbd> - re-indent 3 lines
+          </li>
+          
+          <li>
+            <kbd>=Percent</kbd> - re-indent a block with () or {} (cursor on brace)
+          </li>
+          
+          <li>
+            <kbd>=iB</kbd> - re-indent inner block with {}
+          </li>
+          
+          <li>
+            <kbd>gg=G</kbd> - re-indent entire buffer
+          </li>
+          
+          <li>
+            <kbd>closeSquarep</kbd> - paste and adjust indent to current line
+          </li>
+          
+          <li>
+            <kbd>lessThanPercent</kbd> - de-indent a block with () or {} (cursor on brace)
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Exiting</h1>
+        <ul>
+          
+          <li>
+            <kbd>colonw</kbd> - write (save) the file, but don't exit
+          </li>
+          
+          <li>
+            <kbd>colonwsudo</kbd> - write out the current file using sudo
+          </li>
+          
+          <li>
+            <kbd>colonwq</kbd> - write (save) and quit
+          </li>
+          
+          <li>
+            <kbd>colonx</kbd> - write (save) and quit
+          </li>
+          
+          <li>
+            <kbd>colonq</kbd> - quit (fails if there are unsaved changes)
+          </li>
+          
+          <li>
+            <kbd>colonqbang</kbd> - quit and throw away unsaved changes
+          </li>
+          
+          <li>
+            <kbd>colonwqa</kbd> - write (save) and quit on all tabs
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Search and replace</h1>
+        <ul>
+          
+          <li>
+            <kbd>forwardSlashPattern</kbd> - search for pattern
+          </li>
+          
+          <li>
+            <kbd>questionMarkPattern</kbd> - search backward for pattern
+          </li>
+          
+          <li>
+            <kbd>backslashVpattern</kbd> - 'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)
+          </li>
+          
+          <li>
+            <kbd>n</kbd> - repeat search in same direction
+          </li>
+          
+          <li>
+            <kbd>N</kbd> - repeat search in opposite direction
+          </li>
+          
+          <li>
+            <kbd>colonPercentForwardSlashOldForwardSlashNewForwardSlashg</kbd> - replace all old with new throughout file
+          </li>
+          
+          <li>
+            <kbd>colonPercentForwardSlashOldForwardSlashNewForwardSlashgc</kbd> - replace all old with new throughout file with confirmations
+          </li>
+          
+          <li>
+            <kbd>colonnoh</kbd> - remove highlighting of search matches
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Search in multiple files</h1>
+        <ul>
+          
+          <li>
+            <kbd>colonvimgrep</kbd> - search for pattern in multiple files
+          </li>
+          
+          <li>
+            <kbd>coloncn</kbd> - jump to the next match
+          </li>
+          
+          <li>
+            <kbd>coloncp</kbd> - jump to the previous match
+          </li>
+          
+          <li>
+            <kbd>coloncopen</kbd> - open a window containing the list of matches
+          </li>
+          
+          <li>
+            <kbd>coloncclose</kbd> - close the quickfix window
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Working with multiple files</h1>
+        <ul>
+          
+          <li>
+            <kbd>colone</kbd> - edit a file in a new buffer
+          </li>
+          
+          <li>
+            <kbd>colonbnext</kbd> - go to the next buffer
+          </li>
+          
+          <li>
+            <kbd>colonbprev</kbd> - go to the previous buffer
+          </li>
+          
+          <li>
+            <kbd>colonls</kbd> - list all open buffers
+          </li>
+          
+          <li>
+            <kbd>colonbd</kbd> - delete a buffer (close a file)
+          </li>
+          
+          <li>
+            <kbd>colonbnumber</kbd> - go to a buffer by index #
+          </li>
+          
+          <li>
+            <kbd>colonbfile</kbd> - go to a buffer by file
+          </li>
+          
+          <li>
+            <kbd>colonsp</kbd> - open a file in a new buffer and split window
+          </li>
+          
+          <li>
+            <kbd>colonvsp</kbd> - open a file in a new buffer and vertically split window
+          </li>
+          
+          <li>
+            <kbd>colonvertba</kbd> - edit all buffers as vertical windows
+          </li>
+          
+          <li>
+            <kbd>colontabba</kbd> - edit all buffers as tabs
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusws</kbd> - split window
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswv</kbd> - split window vertically
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusww</kbd> - switch windows
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswq</kbd> - quit a window
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswx</kbd> - exchange current window with next one
+          </li>
+          
+          <li>
+            <kbd>ctrlPlusw=</kbd> - make all windows equal height & width
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswh</kbd> - move cursor to the left window (vertical split)
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswl</kbd> - move cursor to the right window (vertical split)
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswj</kbd> - move cursor to the window below (horizontal split)
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswk</kbd> - move cursor to the window above (horizontal split)
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswH</kbd> - make current window full height at far left (leftmost vertical window)
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswL</kbd> - make current window full height at far right (rightmost vertical window)
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswJ</kbd> - make current window full width at the very bottom (bottommost horizontal window)
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswK</kbd> - make current window full width at the very top (topmost horizontal window)
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Tabs</h1>
+        <ul>
+          
+          <li>
+            <kbd>colonTabNew</kbd> - open a file in a new tab
+          </li>
+          
+          <li>
+            <kbd>ctrlPluswT</kbd> - move the current split window into its own tab
+          </li>
+          
+          <li>
+            <kbd>gt</kbd> - move to the next tab
+          </li>
+          
+          <li>
+            <kbd>gT</kbd> - move to the previous tab
+          </li>
+          
+          <li>
+            <kbd>hashgt</kbd> - move to tab number #
+          </li>
+          
+          <li>
+            <kbd>colontabmove</kbd> - move current tab to the #th position (indexed from 0)
+          </li>
+          
+          <li>
+            <kbd>colontabc</kbd> - close the current tab and all its windows
+          </li>
+          
+          <li>
+            <kbd>colontabo</kbd> - close all tabs except for the current one
+          </li>
+          
+          <li>
+            <kbd>colontabdo</kbd> - run the <code>command</code> on all tabs (e.g. <code>:tabdo q</code> - closes all opened tabs)
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Diff</h1>
+        <ul>
+          
+          <li>
+            <kbd>zf</kbd> - manually define a fold up to motion
+          </li>
+          
+          <li>
+            <kbd>zd</kbd> - delete fold under the cursor
+          </li>
+          
+          <li>
+            <kbd>za</kbd> - toggle fold under the cursor
+          </li>
+          
+          <li>
+            <kbd>zo</kbd> - open fold under the cursor
+          </li>
+          
+          <li>
+            <kbd>zc</kbd> - close fold under the cursor
+          </li>
+          
+          <li>
+            <kbd>zr</kbd> - reduce (open) all folds by one level
+          </li>
+          
+          <li>
+            <kbd>zm</kbd> - fold more (close) all folds by one level
+          </li>
+          
+          <li>
+            <kbd>zi</kbd> - toggle folding functionality
+          </li>
+          
+          <li>
+            <kbd>closeSquarec</kbd> - jump to start of next change
+          </li>
+          
+          <li>
+            <kbd>openSquarec</kbd> - jump to start of previous change
+          </li>
+          
+          <li>
+            <kbd>do</kbd> - obtain (get) difference (from other buffer)
+          </li>
+          
+          <li>
+            <kbd>dp</kbd> - put difference (to other buffer)
+          </li>
+          
+          <li>
+            <kbd>colonDiffthis</kbd> - make current window part of diff
+          </li>
+          
+          <li>
+            <kbd>colonDiffupdate</kbd> - update differences
+          </li>
+          
+          <li>
+            <kbd>colonDiffoff</kbd> - switch off diff mode for current window
+          </li>
+          
+        </ul>
+        
+        <div class="well">
+          <strong>Tip:</strong> The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).<br/>To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>.
+          <p>
+          
+          </p>
+        </div>
+        
+      </div>
+      
+    </div>
+  </body>
+</html>
+
