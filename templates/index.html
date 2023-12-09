@@ -107,7 +107,7 @@
         <ul>
           {{ range $command := $section.Commands.Keys }}
           <li>
-            <kbd>{{ $command }}</kbd> - {{ getCommand $section.Commands $command | unescapeHTML }}
+            <kbd>{{ $command | formatCommand }}</kbd> - {{ getCommand $section.Commands $command | unescapeHTML }}
           </li>
           {{ end }}
         </ul>
@@ -116,7 +116,7 @@
           <strong>Tip:</strong> {{ $section.Tip.Title | unescapeHTML }}
           <p>
           {{ range $command := $section.Tip.Commands.Keys }}
-          &emsp;<kbd>{{ $command }}</kbd> - {{ getCommand $section.Tip.Commands $command | unescapeHTML }}<br/>
+          &emsp;<kbd>{{ $command | formatCommand }}</kbd> - {{ getCommand $section.Tip.Commands $command | unescapeHTML }}<br/>
           {{ end }}
           </p>
         </div>

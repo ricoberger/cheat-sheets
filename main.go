@@ -8,6 +8,7 @@ import (
 	"log"
 	"os"
 	"path"
+	"strings"
 
 	"github.com/iancoleman/orderedmap"
 )
@@ -56,6 +57,9 @@ func renderCheatSheet(cheatSheet CheatSheet) string {
 		"getCommand": func(commands orderedmap.OrderedMap, key string) string {
 			val, _ := commands.Get(key)
 			return val.(string)
+		},
+		"formatCommand": func(s string) template.HTML {
+			return template.HTML(strings.ReplaceAll(strings.ReplaceAll(s, " or ", "</kbd> or <kbd>"), " + ", "</kbd> + <kbd>"))
 		},
 	}).ParseFiles(fp)
 	if err != nil {
