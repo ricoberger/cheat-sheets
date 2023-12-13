@@ -1,6 +1,6 @@
 [
   {
-    "title": "Cursor movement",
+    "title": "Cursor Movement",
     "commands": {
       "h": "move cursor left",
       "j": "move cursor down",
@@ -49,7 +49,7 @@
     }
   },
   {
-    "title": "Insert mode - inserting/appending text",
+    "title": "Insert Mode - Inserting / Appending Text",
     "commands": {
       "i": "insert before the cursor",
       "I": "insert at the beginning of the line",
@@ -96,7 +96,7 @@
     }
   },
   {
-    "title": "Marking text (visual mode)",
+    "title": "Marking Text (Visual Mode)",
     "commands": {
       "v": "start visual mode, mark lines, then do a command (like y-yank)",
       "V": "start linewise visual mode",
@@ -119,7 +119,7 @@
     }
   },
   {
-    "title": "Visual commands",
+    "title": "Visual Commands",
     "commands": {
       ">": "shift text right",
       "<": "shift text left",
@@ -158,7 +158,7 @@
     }
   },
   {
-    "title": "Marks and positions",
+    "title": "Marks and Positions",
     "commands": {
       ":marks": "list of marks",
       "ma": "set current position for mark A",
@@ -190,7 +190,7 @@
     }
   },
   {
-    "title": "Cut and paste",
+    "title": "Cut and Paste",
     "commands": {
       "yy": "yank (copy) a line",
       "2yy": "yank (copy) 2 lines",
@@ -223,7 +223,7 @@
     }
   },
   {
-    "title": "Indent text",
+    "title": "Indent Text",
     "commands": {
       ">>": "indent (move right) line one shiftwidth",
       "<<": "de-indent (move left) line one shiftwidth",
@@ -251,7 +251,7 @@
     }
   },
   {
-    "title": "Search and replace",
+    "title": "Search and Replace",
     "commands": {
       "/pattern": "search for pattern",
       "?pattern": "search backward for pattern",
@@ -261,10 +261,13 @@
       ":%s/old/new/g": "replace all old with new throughout file",
       ":%s/old/new/gc": "replace all old with new throughout file with confirmations",
       ":noh or ESC": "remove highlighting of search matches"
+    },
+    "tip": {
+      "title": "To replace a pattern for all files in the quickfix list the following command can be used: <kbd>:cdo %s/old/new/g | update</kbd>"
     }
   },
   {
-    "title": "Working with multiple files",
+    "title": "Working with Multiple Files",
     "commands": {
       ":e[dit] file": "edit a file in a new buffer",
       ":%!xxd": "switch to binary format for existing file",

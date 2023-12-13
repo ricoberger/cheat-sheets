@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #fff;
+        color: #000;
+        font-family: Georgia, serif;
+        font-size: 12px;
+        margin: 0;
+      }
+
+      .container {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+        -moz-column-gap: 12px;
+        -webkit-column-gap: 12px;
+        column-gap: 12px;
+        padding: 12px;
+      }
+
+      .item {
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+      }
+
+      h1,
+      .h1 {
+        color: inherit;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        letter-spacing: normal;
+      }
+
+      h1 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      a {
+        color: #1a0dab;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      p {
+        margin: 12px 0;
+        line-height: 20px;
+        letter-spacing: normal;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        border-bottom: 1px dashed #e0e0e0;
+        line-height: 1.55;
+        list-style-type: none;
+        padding: 6px 0;
+      }
+
+      kbd {
+        background-color: #eee;
+        color: #000;
+        border-radius: 0;
+        box-shadow: none;
+        font-family: "Inconsolata", monospace;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 4px;
+      }
+
+      .container {
+        background: #fff;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .well {
+        background: #f8f8f8;
+        border: none;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding: 12px;
+      }
+
+      .well kbd {
+        padding: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <div class="item">
+        <h1>Gitsigns</h1>
+        <ul>
+          
+          <li>
+            <kbd>]c</kbd> - jump to next hunk
+          </li>
+          
+          <li>
+            <kbd>[c</kbd> - jump to previous hunk
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ghs</kbd> - stage hunk
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ghr</kbd> - reset hunk
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ghS</kbd> - stage all hunks in current buffer
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ghu</kbd> - undo last hunk
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ghR</kbd> - reset all hunk in current buffer
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ghp</kbd> - preview hunk
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ghd</kbd> - diff
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ghD</kbd> - diff (head)
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gsb</kbd> - git blame (short)
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gsB</kbd> - git blame (full)
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gsd</kbd> - toggle deleted
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Diffview</h1>
+        <ul>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gdo</kbd> - open
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gdc</kbd> - close
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gdm</kbd> - open (main)
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gdt</kbd> - toggle files
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gdf</kbd> - focus files
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gdhb</kbd> - branch history
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gdhf</kbd> - file history
+          </li>
+          
+          <li>
+            <kbd>Tab</kbd> - open diff for the next file
+          </li>
+          
+          <li>
+            <kbd>Shift</kbd> + <kbd>Tab</kbd> - open diff for the previous file
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gdx</kbd> - cycle layout through available layouts
+          </li>
+          
+          <li>
+            <kbd>[x</kbd> - jump to previous conflict
+          </li>
+          
+          <li>
+            <kbd>]x</kbd> - jump to next conflict
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gco</kbd> - choose the OURS version of a conflict
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gct</kbd> - choose the THEIRS version of a conflict
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gcb</kbd> - choose the BASE version of a conflict
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gca</kbd> - choose all the versions of a conflict
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>gcx</kbd> - delete the conflict region
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Telescope</h1>
+        <ul>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>fr</kbd> - recent
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>fb</kbd> - buffers
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>f/</kbd> - search buffer
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ff</kbd> - files
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>fh</kbd> - hidden files
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>fgf</kbd> - git files
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>fgb</kbd> - git branches
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>fgc</kbd> - git commits
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>fgs</kbd> - git status
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>fw</kbd> - search word
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>fs</kbd> - search
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>fd</kbd> - diagnostics
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>fu</kbd> - undo
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>q</kbd> - send all items not filtered to quickfixlist
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>x</kbd> - go to file selection as a split
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>v</kbd> - go to file selection as a vsplit
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>u</kbd> - scroll up in preview window
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>d</kbd> - scroll down in preview window
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>f</kbd> - scroll left in preview window
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>k</kbd> - scroll right in preview window
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>c</kbd> - close telescope (insert mode)
+          </li>
+          
+          <li>
+            <kbd>Esc</kbd> - close telescope (in normal mode)
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Visual Multi</h1>
+        <ul>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>n</kbd> - find under cursor
+          </li>
+          
+          <li>
+            <kbd>n</kbd> - next
+          </li>
+          
+          <li>
+            <kbd>N</kbd> - previous
+          </li>
+          
+          <li>
+            <kbd>q</kbd> - skip
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>j</kbd> - add cursor down
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>k</kbd> - add cursor up
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>c</kbd> - select all
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Todo Comments</h1>
+        <ul>
+          
+          <li>
+            <kbd>]t</kbd> - next todo comment
+          </li>
+          
+          <li>
+            <kbd>[t</kbd> - previous todo comment
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>xt</kbd> - show todos via Trouble
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ft</kbd> - show todos via Telescope
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Neo Tree</h1>
+        <ul>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ee</kbd> - toggle
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>er</kbd> - reveal
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>eb</kbd> - buffers
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>eg</kbd> - git status
+          </li>
+          
+          <li>
+            <kbd>Enter </kbd> - toggle node
+          </li>
+          
+          <li>
+            <kbd>z</kbd> - close all nodes
+          </li>
+          
+          <li>
+            <kbd>q</kbd> - close window
+          </li>
+          
+          <li>
+            <kbd>A</kbd> - add_directory
+          </li>
+          
+          <li>
+            <kbd>a</kbd> - add
+          </li>
+          
+          <li>
+            <kbd>c</kbd> - copy
+          </li>
+          
+          <li>
+            <kbd>d</kbd> - delete
+          </li>
+          
+          <li>
+            <kbd>m</kbd> - move
+          </li>
+          
+          <li>
+            <kbd>r</kbd> - rename
+          </li>
+          
+          <li>
+            <kbd>s</kbd> - open vsplit
+          </li>
+          
+          <li>
+            <kbd>S</kbd> - open split
+          </li>
+          
+          <li>
+            <kbd>/</kbd> - filter files
+          </li>
+          
+          <li>
+            <kbd>D</kbd> - filter directories
+          </li>
+          
+          <li>
+            <kbd>f</kbd> - filter files on submit
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>x</kbd> - clear filter
+          </li>
+          
+          <li>
+            <kbd>H</kbd> - toggle hidden files
+          </li>
+          
+          <li>
+            <kbd>P</kbd> - toggle file preview
+          </li>
+          
+          <li>
+            <kbd>R</kbd> - refresh
+          </li>
+          
+          <li>
+            <kbd>p</kbd> - paste from clipboard
+          </li>
+          
+          <li>
+            <kbd>x</kbd> - cut to clipboard
+          </li>
+          
+          <li>
+            <kbd>y</kbd> - copy to clipboard
+          </li>
+          
+          <li>
+            <kbd>Y</kbd> - copy selector
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>Search and Replace</h1>
+        <ul>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>rs</kbd> - selections
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>ro</kbd> - open
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>rw</kbd> - replace current word
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>re</kbd> - replace current expression
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>rf</kbd> - replace current file
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>rW</kbd> - replace current WORD
+          </li>
+          
+        </ul>
+        
+        <div class="well">
+          <strong>Tip:</strong> To replace in all open buffers <kbd>Space</kbd> + <kbd>rb</kbd> can be used:
+          <p>
+          
+          &emsp;<kbd>Space</kbd> + <kbd>rbs</kbd> - selections<br/>
+          
+          &emsp;<kbd>Space</kbd> + <kbd>rbo</kbd> - open<br/>
+          
+          &emsp;<kbd>Space</kbd> + <kbd>rbw</kbd> - replace current word<br/>
+          
+          &emsp;<kbd>Space</kbd> + <kbd>rbe</kbd> - replace current expression<br/>
+          
+          &emsp;<kbd>Space</kbd> + <kbd>rbf</kbd> - replace current file<br/>
+          
+          &emsp;<kbd>Space</kbd> + <kbd>rbW</kbd> - replace current WORD<br/>
+          
+          </p>
+        </div>
+        
+      </div>
+      
+      <div class="item">
+        <h1>LSP</h1>
+        <ul>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>lr</kbd> - rename
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>lca</kbd> - code action
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>lf</kbd> - format
+          </li>
+          
+          <li>
+            <kbd>gd</kbd> - goto definition
+          </li>
+          
+          <li>
+            <kbd>gr</kbd> - goto references
+          </li>
+          
+          <li>
+            <kbd>gI</kbd> - goto implementation
+          </li>
+          
+          <li>
+            <kbd>gD</kbd> - goto declaration
+          </li>
+          
+          <li>
+            <kbd>Space</kbd> + <kbd>lD</kbd> - type definitions
+          </li>
+          
+          <li>
+            <kbd>K</kbd> - hover documentation
+          </li>
+          
+          <li>
+            <kbd>Ctrl</kbd> + <kbd>k</kbd> - signature documentation
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+    </div>
+  </body>
+</html>
+

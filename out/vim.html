@@ -96,6 +96,10 @@
         box-shadow: none;
         padding: 12px;
       }
+
+      .well kbd {
+        padding: 0px;
+      }
     </style>
   </head>
 
@@ -103,7 +107,7 @@
     <div class="container">
       
       <div class="item">
-        <h1>Cursor movement</h1>
+        <h1>Cursor Movement</h1>
         <ul>
           
           <li>
@@ -282,7 +286,7 @@
       </div>
       
       <div class="item">
-        <h1>Insert mode - inserting/appending text</h1>
+        <h1>Insert Mode - Inserting / Appending Text</h1>
         <ul>
           
           <li>
@@ -446,7 +450,7 @@
       </div>
       
       <div class="item">
-        <h1>Marking text (visual mode)</h1>
+        <h1>Marking Text (Visual Mode)</h1>
         <ul>
           
           <li>
@@ -521,7 +525,7 @@
       </div>
       
       <div class="item">
-        <h1>Visual commands</h1>
+        <h1>Visual Commands</h1>
         <ul>
           
           <li>
@@ -616,7 +620,7 @@
       </div>
       
       <div class="item">
-        <h1>Marks and positions</h1>
+        <h1>Marks and Positions</h1>
         <ul>
           
           <li>
@@ -715,7 +719,7 @@
       </div>
       
       <div class="item">
-        <h1>Cut and paste</h1>
+        <h1>Cut and Paste</h1>
         <ul>
           
           <li>
@@ -816,7 +820,7 @@
       </div>
       
       <div class="item">
-        <h1>Indent text</h1>
+        <h1>Indent Text</h1>
         <ul>
           
           <li>
@@ -904,7 +908,7 @@
       </div>
       
       <div class="item">
-        <h1>Search and replace</h1>
+        <h1>Search and Replace</h1>
         <ul>
           
           <li>
@@ -941,10 +945,17 @@
           
         </ul>
         
+        <div class="well">
+          <strong>Tip:</strong> To replace a pattern for all files in the quickfix list the following command can be used: <kbd>:cdo %s/old/new/g | update</kbd>
+          <p>
+          
+          </p>
+        </div>
+        
       </div>
       
       <div class="item">
-        <h1>Working with multiple files</h1>
+        <h1>Working with Multiple Files</h1>
         <ul>
           
           <li>

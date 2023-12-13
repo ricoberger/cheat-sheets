@@ -1,0 +1,158 @@
+[
+  {
+    "title": "Gitsigns",
+    "commands": {
+      "]c": "jump to next hunk",
+      "[c": "jump to previous hunk",
+      "Space + ghs": "stage hunk",
+      "Space + ghr": "reset hunk",
+      "Space + ghS": "stage all hunks in current buffer",
+      "Space + ghu": "undo last hunk",
+      "Space + ghR": "reset all hunk in current buffer",
+      "Space + ghp": "preview hunk",
+      "Space + ghd": "diff",
+      "Space + ghD": "diff (head)",
+      "Space + gsb": "git blame (short)",
+      "Space + gsB": "git blame (full)",
+      "Space + gsd": "toggle deleted"
+    }
+  },
+  {
+    "title": "Diffview",
+    "commands": {
+      "Space + gdo": "open",
+      "Space + gdc": "close",
+      "Space + gdm": "open (main)",
+      "Space + gdt": "toggle files",
+      "Space + gdf": "focus files",
+      "Space + gdhb": "branch history",
+      "Space + gdhf": "file history",
+      "Tab": "open diff for the next file",
+      "Shift + Tab": "open diff for the previous file",
+      "Space + gdx": "cycle layout through available layouts",
+      "[x": "jump to previous conflict",
+      "]x": "jump to next conflict",
+      "Space + gco": "choose the OURS version of a conflict",
+      "Space + gct": "choose the THEIRS version of a conflict",
+      "Space + gcb": "choose the BASE version of a conflict",
+      "Space + gca": "choose all the versions of a conflict",
+      "Space + gcx": "delete the conflict region"
+    }
+  },
+  {
+    "title": "Telescope",
+    "commands": {
+      "Space + fr": "recent",
+      "Space + fb": "buffers",
+      "Space + f/": "search buffer",
+      "Space + ff": "files",
+      "Space + fh": "hidden files",
+      "Space + fgf": "git files",
+      "Space + fgb": "git branches",
+      "Space + fgc": "git commits",
+      "Space + fgs": "git status",
+      "Space + fw": "search word",
+      "Space + fs": "search",
+      "Space + fd": "diagnostics",
+      "Space + fu": "undo",
+      "Ctrl + q": "send all items not filtered to quickfixlist",
+      "Ctrl + x": "go to file selection as a split",
+      "Ctrl + v": "go to file selection as a vsplit",
+      "Ctrl + u": "scroll up in preview window",
+      "Ctrl + d": "scroll down in preview window",
+      "Ctrl + f": "scroll left in preview window",
+      "Ctrl + k": "scroll right in preview window",
+      "Ctrl + c": "close telescope (insert mode)",
+      "Esc": "close telescope (in normal mode)"
+    }
+  },
+  {
+    "title": "Visual Multi",
+    "commands": {
+      "Ctrl + n": "find under cursor",
+      "n": "next",
+      "N": "previous",
+      "q": "skip",
+      "Ctrl + j": "add cursor down",
+      "Ctrl + k": "add cursor up",
+      "Ctrl + c": "select all"
+    }
+  },
+  {
+    "title": "Todo Comments",
+    "commands": {
+      "]t": "next todo comment",
+      "[t": "previous todo comment",
+      "Space + xt": "show todos via Trouble",
+      "Space + ft": "show todos via Telescope"
+    }
+  },
+  {
+    "title": "Neo Tree",
+    "commands": {
+      "Space + ee": "toggle",
+      "Space + er": "reveal",
+      "Space + eb": "buffers",
+      "Space + eg": "git status",
+      "Enter ": "toggle node",
+      "z": "close all nodes",
+      "q": "close window",
+      "A": "add_directory",
+      "a": "add",
+      "c": "copy",
+      "d": "delete",
+      "m": "move",
+      "r": "rename",
+      "s": "open vsplit",
+      "S": "open split",
+      "/": "filter files",
+      "D": "filter directories",
+      "f": "filter files on submit",
+      "Ctrl + x": "clear filter",
+      "H": "toggle hidden files",
+      "P": "toggle file preview",
+      "R": "refresh",
+      "p": "paste from clipboard",
+      "x": "cut to clipboard",
+      "y": "copy to clipboard",
+      "Y": "copy selector"
+    }
+  },
+  {
+    "title": "Search and Replace",
+    "commands": {
+      "Space + rs": "selections",
+      "Space + ro": "open",
+      "Space + rw": "replace current word",
+      "Space + re": "replace current expression",
+      "Space + rf": "replace current file",
+      "Space + rW": "replace current WORD"
+    },
+    "tip": {
+      "title": "To replace in all open buffers <kbd>Space</kbd> + <kbd>rb</kbd> can be used:",
+      "commands": {
+        "Space + rbs": "selections",
+        "Space + rbo": "open",
+        "Space + rbw": "replace current word",
+        "Space + rbe": "replace current expression",
+        "Space + rbf": "replace current file",
+        "Space + rbW": "replace current WORD"
+      }
+    }
+  },
+  {
+    "title": "LSP",
+    "commands": {
+      "Space + lr": "rename",
+      "Space + lca": "code action",
+      "Space + lf": "format",
+      "gd": "goto definition",
+      "gr": "goto references",
+      "gI": "goto implementation",
+      "gD": "goto declaration",
+      "Space + lD": "type definitions",
+      "K": "hover documentation",
+      "Ctrl + k": "signature documentation"
+    }
+  }
+]
