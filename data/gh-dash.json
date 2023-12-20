@@ -1,0 +1,49 @@
+[
+  {
+    "title": "Movement",
+    "commands": {
+      "k": "move up",
+      "j": "move down",
+      "h": "previous section",
+      "l": "next section",
+      "g": "first item",
+      "G": "last item",
+      "Ctrl+d": "preview page down",
+      "Ctrl+u": "preview page up"
+    }
+  },
+  {
+    "title": "Refresh, Open, Copy",
+    "commands": {
+      "r": "refresh",
+      "R": "refresh all",
+      "s": "switch view",
+      "p": "open in Preview",
+      "o": "open in GitHub",
+      "y": "copy number",
+      "Y": "copy url",
+      "/": "search"
+    }
+  },
+  {
+    "title": "Actions",
+    "commands": {
+      "a": "assign",
+      "A": "unassign",
+      "c": "comment",
+      "d": "diff",
+      "C": "checkout",
+      "x": "close",
+      "w": "ready for review",
+      "X": "reopen",
+      "m": "merge"
+    }
+  },
+  {
+    "title": "Misc",
+    "commands": {
+      "?": "help",
+      "q": "quit"
+    }
+  }
+]
