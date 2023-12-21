@@ -154,5 +154,24 @@
       "K": "hover documentation",
       "Ctrl + k": "signature documentation"
     }
+  },
+  {
+    "title": "Symbols Outline",
+    "commands": {
+      "Space + es": "toggle",
+      "ESC": "close outline",
+      "Enter": "go to symbol location in code",
+      "o": "go to symbol location in code without losing focus",
+      "Ctrl + Space": "hover current symbol",
+      "K": "toggles the current symbol preview",
+      "r": "rename symbol",
+      "a": "code actions",
+      "h": "fold symbol",
+      "l": "unfold symbol",
+      "W": "fold all symbols",
+      "E": "unfold all symbols",
+      "R": "reset all folding",
+      "?": "show help message"
+    }
   }
 ]
