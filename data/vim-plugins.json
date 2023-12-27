@@ -115,7 +115,13 @@
       "p": "paste from clipboard",
       "x": "cut to clipboard",
       "y": "copy to clipboard",
-      "Y": "copy selector"
+      "Y": "copy selector",
+      "ga": "git add file",
+      "gc": "git commit",
+      "gg": "git commit and push",
+      "gp": "git push",
+      "gr": "git revert file",
+      "gu": "git unstage file"
     }
   },
   {
