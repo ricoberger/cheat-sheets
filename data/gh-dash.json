@@ -20,6 +20,7 @@
       "s": "switch view",
       "p": "open in Preview",
       "o": "open in GitHub",
+      "n": "open in Neovim",
       "y": "copy number",
       "Y": "copy url",
       "/": "search"
