@@ -162,6 +162,7 @@
       "gD": "goto declaration",
       "Space + lD": "type definitions",
       "K": "hover documentation",
+      "J": "hover diagnostics",
       "Ctrl + k": "signature documentation"
     }
   },
