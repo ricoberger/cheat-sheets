@@ -67,15 +67,19 @@
     }
   },
   {
-    "title": "Visual Multi",
+    "title": "Bufferline",
     "commands": {
-      "Ctrl + n": "find under cursor",
-      "n": "next",
-      "N": "previous",
-      "q": "skip",
-      "Ctrl + j": "add cursor down",
-      "Ctrl + k": "add cursor up",
-      "Ctrl + c": "select all"
+      "Space + bp": "Toggle pin",
+      "Space + bP": "Delete non-pinned buffers",
+      "Space + bo": "Delete other buffers",
+      "Space + br": "Delete buffers to the right",
+      "Space + bl": "Delete buffers to the left",
+      "Shift + h": "Prev buffer",
+      "Shift + l": "Next buffer",
+      "[b": "Prev buffer",
+      "]b": "Next buffer",
+      "Space + bd": "Delete buffer",
+      "Space + bx": "Delete all buffers"
     }
   },
   {
