@@ -263,7 +263,7 @@
       ":noh or ESC": "remove highlighting of search matches"
     },
     "tip": {
-      "title": "To replace a pattern for all files in the quickfix list the following command can be used: <kbd>:cdo %s/old/new/g | update</kbd>"
+      "title": "To replace a pattern for all files in the quickfix list the following command can be used: <kbd>:cdo %s/old/new/g | update</kbd>. Items can be added to the quickfix list with <kbd>Ctrl</kbd> + <kbd>q</kbd> from Telescope. To remove items from the quickfix list <kbd>dd</kbd> can be used."
     }
   },
   {
