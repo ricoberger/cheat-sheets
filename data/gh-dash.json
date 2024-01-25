@@ -20,7 +20,7 @@
       "s": "switch view",
       "p": "open in Preview",
       "o": "open in GitHub",
-      "n": "open in Neovim",
+      "O": "open in Neovim",
       "y": "copy number",
       "Y": "copy url",
       "/": "search"
@@ -33,6 +33,7 @@
       "A": "unassign",
       "c": "comment",
       "d": "diff",
+      "D": "open diff in Neovim",
       "C": "checkout",
       "x": "close",
       "w": "ready for review",
