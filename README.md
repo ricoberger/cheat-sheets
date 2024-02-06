@@ -1,6 +1,6 @@
-# Cheat Sheets Generator
+# Cheat Sheets
 
-A cheat sheets generator, which generates cheat sheets from JSON files. Inspired by [vim.rtorr.com](https://vim.rtorr.com).
+My personal cheat sheets and cheat sheets generator, which generates cheat sheets from JSON files. Inspired by [vim.rtorr.com](https://vim.rtorr.com).
 
 ```sh
 go build -o ./generator .
