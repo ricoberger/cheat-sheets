@@ -1,0 +1,18 @@
+[
+  {
+    "title": "flux",
+    "commands": {
+      "flux reconcile kustomization &lt;NAMESPACE&gt; --with-source": "Reconcile Kustomization",
+      "flux reconcile helmrelease -n &lt;NAMESPACE&gt; &lt;NAME&gt; --with-source": "Reconcile HelmRelease",
+      "flux suspend kustomization &lt;NAMESPACE&gt; -n flux-system": "Suspend Kustomization",
+      "flux resume kustomization &lt;NAMESPACE&gt; -n flux-system": "Resume Kustomization"
+    }
+  },
+  {
+    "title": "kubectl",
+    "commands": {
+      "kubectl -n &lt;NAMESPACE&gt; patch helmrelease &lt;HELMRELEASE&gt; --type=json -p='[{\"op\": \"add\", \"path\": \"/spec/upgrade\", \"value\": {\"remediation\": {\"retries\": 1}} }]'": "Patch HelmRelease if it is stuck",
+      "kubectl -n &lt;NAMESPACE&gt; patch helmrelease &lt;HELMRELEASE&gt; --type=json -p='[{\"op\": \"remove\", \"path\": \"/spec/upgrade/remediation\"}]'": "Remove the patch from HelmRelease once it is fixed"
+    }
+  }
+]

@@ -107,23 +107,39 @@
     <div class="container">
       
       <div class="item">
-        <h1>Cheat Sheets</h1>
+        <h1>flux</h1>
         <ul>
           
           <li>
-            <kbd>Flux</kbd> - <a href='flux.html'>flux.html</a>
+            <kbd>flux reconcile kustomization &lt;NAMESPACE&gt; --with-source</kbd> - Reconcile Kustomization
           </li>
           
           <li>
-            <kbd>gh dash</kbd> - <a href='gh-dash.html'>gh-dash.html</a>
+            <kbd>flux reconcile helmrelease -n &lt;NAMESPACE&gt; &lt;NAME&gt; --with-source</kbd> - Reconcile HelmRelease
           </li>
           
           <li>
-            <kbd>Vim</kbd> - <a href='vim.html'>vim.html</a>
+            <kbd>flux suspend kustomization &lt;NAMESPACE&gt; -n flux-system</kbd> - Suspend Kustomization
           </li>
           
           <li>
-            <kbd>Vim Plugins</kbd> - <a href='vim-plugins.html'>vim-plugins.html</a>
+            <kbd>flux resume kustomization &lt;NAMESPACE&gt; -n flux-system</kbd> - Resume Kustomization
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+      <div class="item">
+        <h1>kubectl</h1>
+        <ul>
+          
+          <li>
+            <kbd>kubectl -n &lt;NAMESPACE&gt; patch helmrelease &lt;HELMRELEASE&gt; --type=json -p='[{"op": "add", "path": "/spec/upgrade", "value": {"remediation": {"retries": 1}} }]'</kbd> - Patch HelmRelease if it is stuck
+          </li>
+          
+          <li>
+            <kbd>kubectl -n &lt;NAMESPACE&gt; patch helmrelease &lt;HELMRELEASE&gt; --type=json -p='[{"op": "remove", "path": "/spec/upgrade/remediation"}]'</kbd> - Remove the patch from HelmRelease once it is fixed
           </li>
           
         </ul>

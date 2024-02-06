@@ -2,6 +2,7 @@
   {
     "title": "Cheat Sheets",
     "commands": {
+      "Flux": "<a href='flux.html'>flux.html</a>",
       "gh dash": "<a href='gh-dash.html'>gh-dash.html</a>",
       "Vim": "<a href='vim.html'>vim.html</a>",
       "Vim Plugins": "<a href='vim-plugins.html'>vim-plugins.html</a>"
