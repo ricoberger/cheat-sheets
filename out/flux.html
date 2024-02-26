@@ -82,6 +82,22 @@
         padding: 4px;
       }
 
+      code {
+        display: block;
+        background-color: #eee;
+        color: #000;
+        border-radius: 0;
+        box-shadow: none;
+        font-family: "Inconsolata", monospace;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 4px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
       .container {
         background: #fff;
         margin: 0 auto;
@@ -105,6 +121,19 @@
 
   <body>
     <div class="container">
+      
+      <div class="item">
+        <h1>Overview</h1>
+        <ul>
+          
+          <li>
+            <img src="assets/flux-gitops-toolkit.png" />
+            <p>Flux is a tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.</p><p>Flux is built from the ground up to use Kubernetes' API extension system, and to integrate with Prometheus and other core components of the Kubernetes ecosystem. Flux supports multi-tenancy and support for syncing an arbitrary number of Git repositories.</p>
+          </li>
+          
+        </ul>
+        
+      </div>
       
       <div class="item">
         <h1>flux</h1>

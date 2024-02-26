@@ -12,3 +12,8 @@ go build -o ./generator .
 ./generator data/vim.json > out/vim.html
 ./generator data/vim-plugins.json > out/vim-plugins.html
 ```
+
+### Formatting
+
+- **Code:** To add a code section a command can be prefixed using `||| `. The code will be rendered after the commands description.
+- **Image:** To add an image a command can be prefixed using `!!! ` followed by the image url, e.g. `!!! assets/flux-gitops-toolkit.png`

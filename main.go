@@ -59,8 +59,9 @@ func renderCheatSheet(cheatSheet CheatSheet) string {
 			return val.(string)
 		},
 		"formatCommand": func(s string) template.HTML {
-			return template.HTML(strings.ReplaceAll(strings.ReplaceAll(s, " or ", "</kbd> or <kbd>"), " + ", "</kbd> + <kbd>"))
+			return template.HTML(strings.ReplaceAll(strings.ReplaceAll(strings.TrimPrefix(strings.TrimPrefix(s, "!!! "), "||| "), " or ", "</kbd> or <kbd>"), " + ", "</kbd> + <kbd>"))
 		},
+		"hasPrefix": strings.HasPrefix,
 	}).ParseFiles(fp)
 	if err != nil {
 		log.Fatalln("Failed to parse template", err)

@@ -82,6 +82,22 @@
         padding: 4px;
       }
 
+      code {
+        display: block;
+        background-color: #eee;
+        color: #000;
+        border-radius: 0;
+        box-shadow: none;
+        font-family: "Inconsolata", monospace;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 4px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
       .container {
         background: #fff;
         margin: 0 auto;
@@ -111,7 +127,15 @@
         <ul>
           {{ range $command := $section.Commands.Keys }}
           <li>
+            {{- if hasPrefix $command "||| " }}
+            {{ getCommand $section.Commands $command | unescapeHTML }}
+            <code>{{ $command | formatCommand }}</code>
+            {{- else if hasPrefix $command "!!! " }}
+            <img src="{{ $command | formatCommand }}" />
+            {{ getCommand $section.Commands $command | unescapeHTML }}
+            {{- else }}
             <kbd>{{ $command | formatCommand }}</kbd> - {{ getCommand $section.Commands $command | unescapeHTML }}
+            {{- end }}
           </li>
           {{ end }}
         </ul>
