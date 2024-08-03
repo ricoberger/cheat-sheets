@@ -136,7 +136,8 @@
       "Space + rw": "replace current word",
       "Space + re": "replace current expression",
       "Space + rf": "replace current file",
-      "Space + rW": "replace current WORD"
+      "Space + rW": "replace current WORD",
+      "Space + rF": "replace in files via Spectre"
     },
     "tip": {
       "title": "To replace in all open buffers <kbd>Space</kbd> + <kbd>rb</kbd> can be used:",
