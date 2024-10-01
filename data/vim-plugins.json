@@ -10,11 +10,11 @@
       "Space + ghu": "undo last hunk",
       "Space + ghR": "reset all hunk in current buffer",
       "Space + ghp": "preview hunk",
-      "Space + ghd": "diff",
-      "Space + ghD": "diff (head)",
+      "Space + gsd": "diff",
+      "Space + gsD": "diff (head)",
       "Space + gsb": "git blame (short)",
       "Space + gsB": "git blame (full)",
-      "Space + gsd": "toggle deleted"
+      "Space + gsx": "toggle deleted"
     }
   },
   {
