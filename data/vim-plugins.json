@@ -4,17 +4,18 @@
     "commands": {
       "]c": "jump to next hunk",
       "[c": "jump to previous hunk",
-      "Space + ghs": "stage hunk",
-      "Space + ghr": "reset hunk",
-      "Space + ghS": "stage all hunks in current buffer",
-      "Space + ghu": "undo last hunk",
-      "Space + ghR": "reset all hunk in current buffer",
-      "Space + ghp": "preview hunk",
+      "Space + gshs": "stage hunk",
+      "Space + gshr": "reset hunk",
+      "Space + gshS": "stage all hunks in current buffer",
+      "Space + gshu": "undo last hunk",
+      "Space + gshR": "reset all hunk in current buffer",
+      "Space + gshp": "preview hunk",
       "Space + gsd": "diff",
       "Space + gsD": "diff (head)",
       "Space + gsb": "git blame (short)",
       "Space + gsB": "git blame (full)",
-      "Space + gsx": "toggle deleted"
+      "Space + gst": "toggle deleted",
+      "Space + gsx": "trouble"
     }
   },
   {
