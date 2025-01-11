@@ -185,5 +185,19 @@
       "R": "reset all folding",
       "?": "show help message"
     }
+  },
+  {
+    "title": "Completions",
+    "commands": {
+      "Ctrl + Space": "show completions, show / hide documentation",
+      "Ctrl + e": "hide completions",
+      "Enter": "accept completion",
+      "Down": "select next completion",
+      "Up": "select previous completion",
+      "Ctrl + n": "select next completion",
+      "Ctrl + p": "select previous completion",
+      "Ctrl + f": "scroll down in documentation",
+      "Ctrl + b": "scroll up in documentation"
+    }
   }
 ]
