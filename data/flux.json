@@ -9,7 +9,7 @@
     "title": "flux",
     "commands": {
       "flux reconcile kustomization &lt;NAMESPACE&gt; --with-source": "Reconcile Kustomization",
-      "flux reconcile helmrelease -n &lt;NAMESPACE&gt; &lt;NAME&gt; --with-source": "Reconcile HelmRelease",
+      "flux reconcile helmrelease -n &lt;NAMESPACE&gt; &lt;NAME&gt; --with-source --reset --force": "Reconcile HelmRelease",
       "flux suspend kustomization &lt;NAMESPACE&gt; -n flux-system": "Suspend Kustomization",
       "flux resume kustomization &lt;NAMESPACE&gt; -n flux-system": "Resume Kustomization"
     }
