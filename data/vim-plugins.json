@@ -149,6 +149,23 @@
     }
   },
   {
+    "title": "Search and Replace (GrugFar)",
+    "commands": {
+      "Space + sg": "open",
+      "Space + sr": "replace",
+      "Space + sq": "quickfix list",
+      "Space + ss": "sync locations",
+      "Space + sl": "sync line",
+      "Space + sc": "close",
+      "Space + sb": "abort",
+      "Space + st": "open history",
+      "Space + sa": "add history",
+      "Space + sf": "refresh",
+      "Space + sj": "apply next",
+      "Space + sk": "apply previous"
+    }
+  },
+  {
     "title": "LSP",
     "commands": {
       "Space + lcr": "rename",
