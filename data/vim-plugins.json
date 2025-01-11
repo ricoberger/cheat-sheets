@@ -198,5 +198,21 @@
       "Ctrl + f": "scroll down in documentation",
       "Ctrl + b": "scroll up in documentation"
     }
+  },
+  {
+    "title": "Multicursor",
+    "commands": {
+      "Space + mm or Ctrl + n": "add cursor for next word",
+      "Space + mN": "add cursor for all words",
+      "Space + ms": "skip next word",
+      "Space + m + Down": "add cursor below",
+      "Space + m + Up": "add cursor above",
+      "Space + m + Left": "rotate cursor (next)",
+      "Space + m + Right": "rotate cursor (prev)",
+      "Space + mx": "delete cursor",
+      "Space + ma": "align cursors",
+      "Space + mS": "split cursors",
+      "Space + mM": "match cursors"
+    }
   }
 ]
