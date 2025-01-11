@@ -30,7 +30,7 @@ type Tip struct {
 // into a `CheatSheet` struct.
 func readCheatSheet() CheatSheet {
 	if len(os.Args) != 2 {
-		log.Fatalln("Usage: ./cheat-sheets data/vim.json")
+		log.Fatalln("Usage: ./generator data/vim.json")
 	}
 
 	f, err := os.ReadFile(os.Args[1])
