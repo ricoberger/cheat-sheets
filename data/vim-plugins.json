@@ -33,11 +33,11 @@
       "Space + gdx": "cycle layout through available layouts",
       "[x": "jump to previous conflict",
       "]x": "jump to next conflict",
-      "Space + gco": "choose the OURS version of a conflict",
-      "Space + gct": "choose the THEIRS version of a conflict",
-      "Space + gcb": "choose the BASE version of a conflict",
-      "Space + gca": "choose all the versions of a conflict",
-      "Space + gcx": "delete the conflict region"
+      "Space + gdco": "choose the OURS version of a conflict",
+      "Space + gdct": "choose the THEIRS version of a conflict",
+      "Space + gdcb": "choose the BASE version of a conflict",
+      "Space + gdca": "choose all the versions of a conflict",
+      "Space + gdcx": "delete the conflict region"
     }
   },
   {
