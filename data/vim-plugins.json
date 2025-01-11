@@ -41,30 +41,40 @@
     }
   },
   {
-    "title": "Telescope",
+    "title": "fzf",
     "commands": {
-      "Space + fr": "recent",
+      "Space + ff": "help",
+      "Space + fs": "search",
       "Space + fb": "buffers",
-      "Space + f/": "search buffer",
-      "Space + ff": "files",
-      "Space + fh": "hidden files",
+      "Space + f/": "search buffers",
+      "Space + fr": "recent",
+      "Space + fR": "resume",
+      "Space + fd": "buffer diagnostics",
+      "Space + fD": "workspace diagnostics",
+      "Space + q": "quickfix list",
+      "Space + l": "location list",
+      "Space + T": "treesitter",
       "Space + fgf": "git files",
       "Space + fgb": "git branches",
+      "Space + fgB": "git blame",
       "Space + fgc": "git commits",
+      "Space + fgC": "git commits (buffer)",
       "Space + fgs": "git status",
-      "Space + fw": "search word",
-      "Space + fs": "search",
-      "Space + fd": "diagnostics",
-      "Space + fu": "undo",
-      "Ctrl + q": "send all items not filtered to quickfixlist",
-      "Ctrl + x": "go to file selection as a split",
+      "Space + fgS": "git stash",
+      "Space + fgt": "git tags",
       "Ctrl + v": "go to file selection as a vsplit",
-      "Ctrl + u": "scroll up in preview window",
-      "Ctrl + d": "scroll down in preview window",
-      "Ctrl + f": "scroll left in preview window",
-      "Ctrl + k": "scroll right in preview window",
-      "Ctrl + c": "close telescope (insert mode)",
-      "Esc": "close telescope (in normal mode)"
+      "Ctrl + s": "go to file selection as a split",
+      "Ctrl + q": "send all items to quickfixlist",
+      "Ctrl + x": "close buffer",
+      "Ctrl + f": "page down",
+      "Ctrl + b": "page up",
+      "Ctrl + a": "beginning of line",
+      "Ctrl + e": "end of line",
+      "Shift + Down": "scroll page down in preview window",
+      "Shift + Up": "scroll page up in preview window",
+      "Shift + Alt + Down": "scroll down in preview window",
+      "Shift + Alt + Up": "scroll up in preview window",
+      "Esc": "close fzf"
     }
   },
   {
@@ -89,7 +99,7 @@
       "]t": "next todo comment",
       "[t": "previous todo comment",
       "Space + xt": "show todos via Trouble",
-      "Space + ft": "show todos via Telescope"
+      "Space + ft": "show todos via fzf"
     }
   },
   {
