@@ -29,6 +29,7 @@
   {
     "title": "Actions",
     "commands": {
+      "y": "approve",
       "a": "assign",
       "A": "unassign",
       "c": "comment",
@@ -36,9 +37,10 @@
       "D": "open diff in Neovim",
       "C": "checkout",
       "x": "close",
-      "w": "ready for review",
+      "w": "watch checks",
       "X": "reopen",
-      "m": "merge"
+      "m": "merge",
+      "u": "update pr from base branch"
     }
   },
   {
