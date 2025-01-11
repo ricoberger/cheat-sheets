@@ -15,7 +15,7 @@
       "Space + gsb": "git blame (short)",
       "Space + gsB": "git blame (full)",
       "Space + gst": "toggle deleted",
-      "Space + gsx": "trouble"
+      "Space + gsx": "show hunks via Trouble"
     }
   },
   {
@@ -43,7 +43,7 @@
   {
     "title": "fzf",
     "commands": {
-      "Space + ff": "help",
+      "Space + ff": "files",
       "Space + fs": "search",
       "Space + fb": "buffers",
       "Space + f/": "search buffers",
@@ -54,6 +54,7 @@
       "Space + q": "quickfix list",
       "Space + l": "location list",
       "Space + T": "treesitter",
+      "Space + h": "help",
       "Space + fgf": "git files",
       "Space + fgb": "git branches",
       "Space + fgB": "git blame",
@@ -64,7 +65,7 @@
       "Space + fgt": "git tags",
       "Ctrl + v": "go to file selection as a vsplit",
       "Ctrl + s": "go to file selection as a split",
-      "Ctrl + q": "send all items to quickfixlist",
+      "Ctrl + q": "send all items to quickfix list",
       "Ctrl + x": "close buffer",
       "Ctrl + f": "page down",
       "Ctrl + b": "page up",
@@ -75,22 +76,6 @@
       "Shift + Alt + Down": "scroll down in preview window",
       "Shift + Alt + Up": "scroll up in preview window",
       "Esc": "close fzf"
-    }
-  },
-  {
-    "title": "Bufferline",
-    "commands": {
-      "Space + bp": "Toggle pin",
-      "Space + bP": "Delete non-pinned buffers",
-      "Space + bo": "Delete other buffers",
-      "Space + br": "Delete buffers to the right",
-      "Space + bl": "Delete buffers to the left",
-      "Shift + h": "Prev buffer",
-      "Shift + l": "Next buffer",
-      "[b": "Prev buffer",
-      "]b": "Next buffer",
-      "Space + bd": "Delete buffer",
-      "Space + bx": "Delete all buffers"
     }
   },
   {
@@ -106,6 +91,7 @@
     "title": "Neo Tree",
     "commands": {
       "Space + ee": "toggle",
+      "Space + ef": "fullscreen",
       "Space + er": "reveal",
       "Space + eb": "buffers",
       "Space + eg": "git status",
@@ -165,36 +151,21 @@
   {
     "title": "LSP",
     "commands": {
-      "Space + lr": "rename",
-      "Space + lca": "code action",
-      "Space + lf": "format",
+      "Space + lcr": "rename",
+      "Space + lca": "actions",
+      "Space + lcf": "format",
+      "Space + lcl": "lint",
+      "Space + lwa": "add folder to workspace",
+      "Space + lwr": "remove folder from workspace",
+      "Space + lwl": "list folders in workspace",
       "gd": "goto definition",
       "gr": "goto references",
       "gI": "goto implementation",
+      "gy": "goto type definition",
       "gD": "goto declaration",
-      "Space + lD": "type definitions",
       "K": "hover documentation",
       "J": "hover diagnostics",
       "Ctrl + k": "signature documentation"
-    }
-  },
-  {
-    "title": "Symbols Outline",
-    "commands": {
-      "Space + es": "toggle",
-      "ESC": "close outline",
-      "Enter": "go to symbol location in code",
-      "o": "go to symbol location in code without losing focus",
-      "Ctrl + Space": "hover current symbol",
-      "K": "toggles the current symbol preview",
-      "r": "rename symbol",
-      "a": "code actions",
-      "h": "fold symbol",
-      "l": "unfold symbol",
-      "W": "fold all symbols",
-      "E": "unfold all symbols",
-      "R": "reset all folding",
-      "?": "show help message"
     }
   },
   {
