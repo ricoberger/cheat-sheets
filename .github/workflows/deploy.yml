@@ -41,6 +41,7 @@ jobs:
       - name: Build Cheat Sheets
         run: |
           mkdir -p out
+          cp -r ./assets out
 
           ./generator data/index.json > out/index.html
 
