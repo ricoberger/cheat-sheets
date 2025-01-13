@@ -168,10 +168,10 @@
   {
     "title": "Surround",
     "commands": {
-      "ys + Motion + Char": "add a delimiter pair",
-      "ds + Char": "delete a delimiter pair",
-      "cs + Old Char + New Char": "change a delimiter pair",
-      "S + Char": "surround selection (visual)"
+      "gs + Motion + Delimiter": "add a delimiter pair",
+      "gsd + Delimiter": "delete a delimiter pair",
+      "gsc + Old Delimiter + New Delimiter": "change a delimiter pair",
+      "gs + Char": "surround selection (visual)"
     }
   },
   {
