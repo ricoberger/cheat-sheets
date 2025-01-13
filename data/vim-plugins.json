@@ -117,6 +117,7 @@
       "y": "copy to clipboard",
       "Y": "copy selector",
       "D": "diff files",
+      "Z": "search and replace via GrugFar",
       "ga": "git add file",
       "gc": "git commit",
       "gg": "git commit and push",
@@ -157,10 +158,10 @@
       "Space + ss": "sync locations",
       "Space + sl": "sync line",
       "Space + sc": "close",
-      "Space + sb": "abort",
-      "Space + st": "open history",
-      "Space + sa": "add history",
-      "Space + sf": "refresh",
+      "Space + sa": "abort",
+      "Space + sho": "open history",
+      "Space + sha": "add history",
+      "Space + sR": "refresh",
       "Space + sj": "apply next",
       "Space + sk": "apply previous"
     }
