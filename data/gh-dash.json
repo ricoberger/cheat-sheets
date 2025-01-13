@@ -37,6 +37,7 @@
       "D": "open diff in Neovim",
       "C": "checkout",
       "x": "close",
+      "W": "ready for review",
       "w": "watch checks",
       "X": "reopen",
       "m": "merge",
