@@ -90,9 +90,9 @@
   {
     "title": "Neo Tree",
     "commands": {
-      "Space + ee": "toggle",
-      "Space + ef": "fullscreen",
+      "Space + ee": "open",
       "Space + er": "reveal",
+      "Space + ef": "files",
       "Space + eb": "buffers",
       "Space + eg": "git status",
       "Enter ": "toggle node",
@@ -163,6 +163,15 @@
       "Space + sf": "refresh",
       "Space + sj": "apply next",
       "Space + sk": "apply previous"
+    }
+  },
+  {
+    "title": "Surround",
+    "commands": {
+      "ys + Motion + Char": "add a delimiter pair",
+      "ds + Char": "delete a delimiter pair",
+      "cs + Old Char + New Char": "change a delimiter pair",
+      "S + Char": "surround selection (visual)"
     }
   },
   {
