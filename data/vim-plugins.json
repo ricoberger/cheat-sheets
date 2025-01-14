@@ -196,6 +196,29 @@
     }
   },
   {
+    "title": "Treesitter",
+    "commands": {
+      "aa": "select outer parameter",
+      "ia": "select inner parameter",
+      "af": "select outer function",
+      "if": "select inner function",
+      "ac": "select outer class",
+      "ic": "select innter class",
+      "]m": "goto next start function",
+      "]]": "goto next start class",
+      "]M": "goto next end function",
+      "][": "goto next end class",
+      "[m": "goto previous start function",
+      "[[": "goto previous start class",
+      "[M": "goto previous end function",
+      "[]": "goto previous end class",
+      "gss": "init selection",
+      "gsn": "increment selection (node)",
+      "gsc": "increment selection (scope)",
+      "gsm": "decrement selection (node)"
+    }
+  },
+  {
     "title": "Completions",
     "commands": {
       "Ctrl + Space": "show completions, show / hide documentation",
