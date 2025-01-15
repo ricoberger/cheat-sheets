@@ -15,7 +15,8 @@
       "Space + gsb": "git blame (short)",
       "Space + gsB": "git blame (full)",
       "Space + gst": "toggle deleted",
-      "Space + gsx": "show hunks via Trouble"
+      "Space + gsq": "show hunks via quickfix list",
+      "Space + gsl": "show hunks via location list"
     }
   },
   {
@@ -49,12 +50,20 @@
       "Space + f/": "search buffers",
       "Space + fr": "recent",
       "Space + fR": "resume",
-      "Space + fd": "buffer diagnostics",
-      "Space + fD": "workspace diagnostics",
-      "Space + q": "quickfix list",
-      "Space + l": "location list",
-      "Space + T": "treesitter",
-      "Space + h": "help",
+      "Space + fq": "quickfix list",
+      "Space + fl": "location list",
+      "Space + ft": "treesitter",
+      "Space + fh": "help",
+      "Space + fd": "Definitions",
+      "Space + fD": "Declarations",
+      "Space + fls": "buffer symbols",
+      "Space + flS": "workspace symbols",
+      "Space + flr": "References",
+      "Space + fld": "Definitions",
+      "Space + flD": "Declarations",
+      "Space + fly": "Type Definitions",
+      "Space + fli": "Implementations",
+      "Space + flf": "Finder",
       "Space + fgf": "git files",
       "Space + fgb": "git branches",
       "Space + fgB": "git blame",
@@ -83,8 +92,9 @@
     "commands": {
       "]t": "next todo comment",
       "[t": "previous todo comment",
-      "Space + xt": "show todos via Trouble",
-      "Space + ft": "show todos via fzf"
+      "Space + tf": "show todos via fzf",
+      "Space + tq": "show todos via quickfix list",
+      "Space + tl": "show todos via location list"
     }
   },
   {
@@ -178,10 +188,10 @@
   {
     "title": "LSP",
     "commands": {
-      "Space + lcr": "rename",
-      "Space + lca": "actions",
-      "Space + lcf": "format",
-      "Space + lcl": "lint",
+      "Space + lr": "rename",
+      "Space + la": "actions",
+      "Space + lf": "format",
+      "Space + ll": "lint",
       "Space + lwa": "add folder to workspace",
       "Space + lwr": "remove folder from workspace",
       "Space + lwl": "list folders in workspace",
