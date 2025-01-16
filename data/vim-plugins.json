@@ -23,7 +23,7 @@
     "title": "Diffview",
     "commands": {
       "Space + gdo": "open",
-      "Space + gdc": "close",
+      "Space + gdC": "close",
       "Space + gdm": "open (main)",
       "Space + gdt": "toggle files",
       "Space + gdf": "focus files",
@@ -105,6 +105,8 @@
       "Space + ef": "files",
       "Space + eb": "buffers",
       "Space + eg": "git status",
+      "Space + ed": "diagnostics",
+      "Space + es": "symbols",
       "Enter ": "toggle node",
       "z": "close all nodes",
       "q": "close window",
