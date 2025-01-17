@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Navigation",
+    "commands": {
+      "h": "move cursor left"
+    }
+  },
+  {
+    "title": "Selection",
+    "commands": {
+      "h": "move cursor left"
+    }
+  },
+  {
+    "title": "File Operations",
+    "commands": {
+      "h": "move cursor left"
+    }
+  },
+  {
+    "title": "Copy Paths",
+    "commands": {
+      "h": "move cursor left"
+    }
+  },
+  {
+    "title": "Filter Files",
+    "commands": {
+      "h": "move cursor left"
+    }
+  },
+  {
+    "title": "Find Files",
+    "commands": {
+      "h": "move cursor left"
+    }
+  },
+  {
+    "title": "Search Files",
+    "commands": {
+      "h": "move cursor left"
+    }
+  },
+  {
+    "title": "Sorting",
+    "commands": {
+      "h": "move cursor left"
+    }
+  },
+  {
+    "title": "Multi-Tab",
+    "commands": {
+      "h": "move cursor left"
+    }
+  }
+]
