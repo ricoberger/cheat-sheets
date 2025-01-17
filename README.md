@@ -11,6 +11,7 @@ go build -o ./generator .
 ./generator data/gh-dash.json > out/gh-dash.html
 ./generator data/vim.json > out/vim.html
 ./generator data/vim-plugins.json > out/vim-plugins.html
+./generator data/yazi.json > out/yazi.html
 ```
 
 ### Formatting
