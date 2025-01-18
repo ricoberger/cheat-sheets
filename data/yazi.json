@@ -2,55 +2,114 @@
   {
     "title": "Navigation",
     "commands": {
-      "h": "move cursor left"
+      "k or Up": "move the cursor up",
+      "j or Down": "move the cursor down",
+      "l or Right": "enter hovered directory",
+      "h or Left": "leave the current directory and into its parent",
+      "K": "seek up 5 units in the preview",
+      "J": "seek down 5 units in the preview",
+      "gg": "move cursor to the top",
+      "G": "move cursor to the bottom",
+      "z": "jump to a directory using zoxide",
+      "Z": "jump to a directory or reveal a file using fzf"
     }
   },
   {
     "title": "Selection",
     "commands": {
-      "h": "move cursor left"
+      "Space": "toggle selection of hovered file/directory",
+      "v": "enter visual mode (selection mode)",
+      "V": "enter visual mode (unset mode)",
+      "Ctrl + a": "select all files",
+      "Ctrl + r": "inverse selection of all files",
+      "Esc": "cancel selection"
     }
   },
   {
     "title": "File Operations",
     "commands": {
-      "h": "move cursor left"
+      "o": "open selected files",
+      "O": "open selected files interactively",
+      "Enter": "open selected files",
+      "Shift + Enter": "open selected files interactively (some terminals don't support it yet)",
+      "Tab": "show the file information",
+      "y": "yank selected files (copy)",
+      "x": "yank selected files (cut)",
+      "p": "paste yanked files",
+      "P": "paste yanked files (overwrite if the destination exists)",
+      "Y or X": "cancel the yank status",
+      "d": "trash selected files",
+      "D": "permanently delete selected files",
+      "a": "create a file (ends with / for directories)",
+      "r": "rename selected file(s)",
+      ".": "toggle the visibility of hidden files",
+      ";": "run a shell command",
+      ":": "run a shell command (block until finishes)",
+      "-": "symlink the absolute path of yanked files",
+      "_": "symlink the relative path of yanked files",
+      "Ctrl + -": "hardlink yanked files"
     }
   },
   {
     "title": "Copy Paths",
     "commands": {
-      "h": "move cursor left"
+      "cc": "copy the file path",
+      "cd": "copy the directory path",
+      "cf": "copy the filename",
+      "cn": "copy the filename without extension"
     }
   },
   {
     "title": "Filter Files",
     "commands": {
-      "h": "move cursor left"
+      "f": "filter files"
     }
   },
   {
     "title": "Find Files",
     "commands": {
-      "h": "move cursor left"
+      "/": "find next file",
+      "?": "find previous file",
+      "n": "go to the next found",
+      "N": "go to the previous found"
     }
   },
   {
     "title": "Search Files",
     "commands": {
-      "h": "move cursor left"
+      "s": "search files by name using fd",
+      "S": "search files by content using ripgrep",
+      "Ctrl + s": "cancel the ongoing search"
     }
   },
   {
     "title": "Sorting",
     "commands": {
-      "h": "move cursor left"
+      ",m": "sort by modified time",
+      ",M": "sort by modified time (reverse)",
+      ",b": "sort by birth time",
+      ",B": "sort by birth time (reverse)",
+      ",e": "sort by file extension",
+      ",E": "sort by file extension (reverse)",
+      ",a": "sort alphabetically",
+      ",A": "sort alphabetically (reverse)",
+      ",n": "sort naturally",
+      ",N": "sort naturally (reverse)",
+      ",s": "sort by size",
+      ",S": "sort by size (reverse)",
+      ",r": "sort randomly"
     }
   },
   {
     "title": "Multi-Tab",
     "commands": {
-      "h": "move cursor left"
+      "t": "create a new tab with CWD",
+      "0 or ... or 9": "switch to the n-th tab",
+      "[": "switch to the previous tab",
+      "]": "switch to the next tab",
+      "{": "swap current tab with previous tab",
+      "}": "swap current tab with next tab",
+      "Ctrl + c": "close the current tab"
     }
   }
 ]

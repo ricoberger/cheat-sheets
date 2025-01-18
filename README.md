@@ -5,12 +5,9 @@ My personal cheat sheets and cheat sheets generator, which generates cheat sheet
 ```sh
 go build -o ./generator .
 
-./generator data/index.json > out/index.html
-
-./generator data/flux.json > out/flux.html
-./generator data/gh-dash.json > out/gh-dash.html
-./generator data/vim.json > out/vim.html
-./generator data/vim-plugins.json > out/vim-plugins.html
+for file in $(ls ./data); do
+  ./generator data/$file > out/${file//json/html}
+done
 ```
 
 ### Formatting
