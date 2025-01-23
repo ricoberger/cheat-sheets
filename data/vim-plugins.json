@@ -191,15 +191,6 @@
     }
   },
   {
-    "title": "Surround",
-    "commands": {
-      "gs + Motion + Delimiter": "add a delimiter pair",
-      "gsd + Delimiter": "delete a delimiter pair",
-      "gsc + Old Delimiter + New Delimiter": "change a delimiter pair",
-      "gs + Char": "surround selection (visual)"
-    }
-  },
-  {
     "title": "LSP",
     "commands": {
       "Space + lr": "rename",
