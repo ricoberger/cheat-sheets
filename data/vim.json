@@ -16,7 +16,7 @@
       "B": "jump backwards to the start of a word (words can contain punctuation)",
       "ge": "jump backwards to the end of a word",
       "gE": "jump backwards to the end of a word (words can contain punctuation)",
-      "%": "move cursor to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)",
+      "%": "move cursor to matching character (default supported pairs: '()', '{}', '[]' - use <kbd>:h matchpairs</kbd> in vim for more info)",
       "0": "jump to the start of the line",
       "_": "jump to the first non-blank character of the line",
       "$": "jump to the end of the line",
@@ -190,6 +190,22 @@
     }
   },
   {
+    "title": "Comment",
+    "commands": {
+      "gc": "toggle comment for selection",
+      "gcc": "toggle comment for the current line"
+    }
+  },
+  {
+    "title": "Surround",
+    "commands": {
+      "gs( or gs)": "surround selection with ()",
+      "gs{ or gs}": "surround selection with {}",
+      "gs[ or gs]": "surround selection with []",
+      "gs< or gs>": "surround selection with <>"
+    }
+  },
+  {
     "title": "Cut and Paste",
     "commands": {
       "yy": "yank (copy) a line",
@@ -225,6 +241,8 @@
   {
     "title": "Indent Text",
     "commands": {
+      ">": "indent in visual mode",
+      "<": "de-indent in visual mode",
       ">>": "indent (move right) line one shiftwidth",
       "<<": "de-indent (move left) line one shiftwidth",
       ">%": "indent a block with () or {} (cursor on brace)",
@@ -236,6 +254,13 @@
       "=iB": "re-indent inner block with {}",
       "gg=G": "re-indent entire buffer",
       "]p": "paste and adjust indent to current line"
+    }
+  },
+  {
+    "title": "Move Text",
+    "commands": {
+      "Alt + j": "move line down",
+      "Alt + k": "move line up"
     }
   },
   {
@@ -260,10 +285,16 @@
       "N": "repeat search in opposite direction",
       ":%s/old/new/g": "replace all old with new throughout file",
       ":%s/old/new/gc": "replace all old with new throughout file with confirmations",
-      ":noh or ESC": "remove highlighting of search matches"
+      ":%s/old/new/gci": "replace all old with new throughout file with confirmations (case insensitive)",
+      ":%s/old/new/gcI": "replace all old with new throughout file with confirmations (case sensitive)",
+      ":noh or ESC": "remove highlighting of search matches",
+      "Space + rr": "search and replace",
+      "Space + rw": "search and replace word under cursor",
+      "Space + rR": "search and replace for all files in quickfix list",
+      "Space + rW": "search and replace word under cursor for all files in quickfix list"
     },
     "tip": {
-      "title": "To replace a pattern for all files in the quickfix list the following command can be used: <kbd>:cdo %s/old/new/g | update</kbd>. Items can be added to the quickfix list with <kbd>Ctrl</kbd> + <kbd>q</kbd> from fzf. To remove items from the quickfix list <kbd>dd</kbd> can be used."
+      "title": "To replace a pattern for all files in the quickfix list the following command can be used: <kbd>:cfdo %s/old/new/gcI | update</kbd>. Items can be added to the quickfix list with <kbd>Ctrl</kbd> + <kbd>q</kbd> from the picker. To remove items from the quickfix list <kbd>dd</kbd> can be used."
     }
   },
   {
@@ -293,7 +324,19 @@
       "Ctrl + wH": "make current window full height at far left (leftmost vertical window)",
       "Ctrl + wL": "make current window full height at far right (rightmost vertical window)",
       "Ctrl + wJ": "make current window full width at the very bottom (bottommost horizontal window)",
-      "Ctrl + wK": "make current window full width at the very top (topmost horizontal window)"
+      "Ctrl + wK": "make current window full width at the very top (topmost horizontal window)",
+      "Tab": "next buffer",
+      "Shift + Tab": "previous buffer"
+    }
+  },
+  {
+    "title": "Tabs",
+    "commands": {
+      "Ctrl + tn": "create a new tab",
+      "Ctrl + tN": "create a new tab for current window",
+      "Ctrl + tc": "close tab",
+      "gt": "next tab",
+      "gT": "previous tab"
     }
   },
   {
