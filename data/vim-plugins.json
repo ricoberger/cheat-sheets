@@ -23,8 +23,8 @@
     "title": "Diffview",
     "commands": {
       "Space + gdo": "open",
+      "Space + gdO": "open (head)",
       "Space + gdC": "close",
-      "Space + gdm": "open (main)",
       "Space + gdt": "toggle files",
       "Space + gdf": "focus files",
       "Space + gdhb": "branch history",

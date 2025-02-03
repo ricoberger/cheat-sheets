@@ -8,8 +8,8 @@
       "l": "next section",
       "g": "first item",
       "G": "last item",
-      "Ctrl+d": "preview page down",
-      "Ctrl+u": "preview page up"
+      "Ctrl + d": "preview page down",
+      "Ctrl + u": "preview page up"
     }
   },
   {
@@ -41,7 +41,10 @@
       "w": "watch checks",
       "X": "reopen",
       "m": "merge",
-      "u": "update pr from base branch"
+      "M": "merge (admin)",
+      "u": "update pr from base branch",
+      "Ctrl + l": "add label to PR",
+      "Ctrl + k": "remove label from PR"
     }
   },
   {

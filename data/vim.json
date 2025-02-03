@@ -202,7 +202,10 @@
       "gs( or gs)": "surround selection with ()",
       "gs{ or gs}": "surround selection with {}",
       "gs[ or gs]": "surround selection with []",
-      "gs< or gs>": "surround selection with <>"
+      "gs< or gs>": "surround selection with <>",
+      "gs\"": "surround selection with \"\"",
+      "gs'": "surround selection with ''",
+      "gs`": "surround selection with ``"
     }
   },
   {
