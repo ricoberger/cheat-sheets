@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Windows",
+    "commands": {
+      "Command + n": "new window",
+      "Command + q": "quit window",
+      "Command + w": "close surface",
+      "Command + Alt + Shift + w": "close all windows",
+      "Command + Ctrl + f": "toggle fullscreen"
+    }
+  },
+  {
+    "title": "Tabs",
+    "commands": {
+      "Command + t": "new tab",
+      "Ctrl + Tab": "next tab",
+      "Ctrl + Shift + Tab": "previous tab",
+      "Command + <NUM>": "go to tab <NUM>"
+    }
+  },
+  {
+    "title": "Split",
+    "commands": {
+      "Command + d": "split right",
+      "Command + Shift + d": "split bottom",
+      "Command + Shift + Enter": "toogle zoom",
+      "Command + Alt + Left": "go to left split",
+      "Command + Alt + Right": "go to right split",
+      "Command + Alt + Up": "go to top split",
+      "Command + Alt + Down": "go to bottom split",
+      "Command + Ctrl + Left": "resize split left",
+      "Command + Ctrl + Right": "resize split right",
+      "Command + Ctrl + Up": "resize split up",
+      "Command + Ctrl + Down": "resize split down"
+    }
+  },
+  {
+    "title": "Scroll",
+    "commands": {
+      "Command + Home": "scroll to top",
+      "Command + End": "scroll to bottom",
+      "Command + Page Up": "scroll page up",
+      "Command + Page Down": "scroll page down"
+    }
+  },
+  {
+    "title": "Font Size",
+    "commands": {
+      "Command + Plus": "increase font size",
+      "Command + Minus": "decrease font size",
+      "Command + 0": "reset font size"
+    }
+  },
+  {
+    "title": "Actions",
+    "commands": {
+      "Command + v": "paste",
+      "Command + c": "copy",
+      "Command + a": "select all",
+      "Command + k": "clear screen"
+    }
+  },
+  {
+    "title": "Selection",
+    "commands": {
+      "Command + Shift + Left": "adjust selection left",
+      "Command + Shift + Right": "adjust selection right",
+      "Command + Shift + Up": "adjust selection up",
+      "Command + Shift + Down": "adjust selection down",
+      "Command + Shift + Home": "adjust selection to home",
+      "Command + Shift + End": "adjust selection to end",
+      "Command + Shift + Page Up": "adjust selection to page up",
+      "Command + Shift + Page Down": "adjust selection to page down"
+    }
+  },
+  {
+    "title": "Quick Terminal",
+    "commands": {
+      "Command + #": "toogle quick terminal"
+    }
+  }
+]
