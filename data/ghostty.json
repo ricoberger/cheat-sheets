@@ -46,8 +46,8 @@
   {
     "title": "Font Size",
     "commands": {
-      "Command + Plus": "increase font size",
-      "Command + Minus": "decrease font size",
+      "Command + +": "increase font size",
+      "Command + -": "decrease font size",
       "Command + 0": "reset font size"
     }
   },
