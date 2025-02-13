@@ -1,5 +1,8 @@
 # Cheat Sheets
 
+> [!WARNING]
+> All existing and new cheat sheets can be found at https://github.com/ricoberger/ricoberger
+
 My personal cheat sheets and cheat sheets generator, which generates cheat sheets from JSON files. Inspired by [vim.rtorr.com](https://vim.rtorr.com).
 
 ```sh
